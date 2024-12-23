@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import instagram from '../assets/SocialMedia/instagramLogo.png';
 import facebook from '../assets/SocialMedia/Facebook.png';
-import github from '../assets/SocialMedia/Github.png';
+import github from '../assets/SocialMedia/GitHub.png';
 import linkedin from '../assets/SocialMedia/LinkedIn.png';
 import X from '../assets/SocialMedia/x.png';
 
