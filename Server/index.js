@@ -5,7 +5,14 @@ const app = express()
 const port = 5000
 app.use(express.json());
 
-app.use(cors());
+app.use(cors(
+  {
+    origin : ["https://abhaykevat.vercel.app/"],
+    methods : ["GET","POST"],
+    credentials : true
+  }
+));
+
 
 //routes
 app.use("/email", require("./routes/emailRoutes"));
