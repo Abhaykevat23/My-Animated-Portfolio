@@ -1,0 +1,3 @@
+index.html : og url meta
+index.html : user can not select anything on page
+use nodemailer for contact details...
