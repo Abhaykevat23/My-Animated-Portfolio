@@ -4,7 +4,7 @@ import instagram from '../assets/SocialMedia/instagramLogo.png';
 import facebook from '../assets/SocialMedia/Facebook.png';
 import github from '../assets/SocialMedia/GitHub.png';
 import linkedin from '../assets/SocialMedia/LinkedIn.png';
-import X from '../assets/SocialMedia/x.png';
+import X from '../assets/SocialMedia/X.png';
 
 function Contact() {
 
