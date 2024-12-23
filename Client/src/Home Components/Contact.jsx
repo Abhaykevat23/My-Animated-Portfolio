@@ -9,7 +9,8 @@ function Contact() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
-    const baseUrl = "http://127.0.0.1:5000";
+    // const baseUrl = "http://127.0.0.1:5000";
+    const baseUrl = "https://animated-portfolio-backend.vercel.app";
 
     const sendMail = async () => {
         let dataSend = {
