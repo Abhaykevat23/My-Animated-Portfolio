@@ -76,14 +76,11 @@ function Landing() {
         // height:"1.5rem"
     };
 
-
-
-
     return (
         <>
-            <div className=' relative'>
+            <div className='relative'>
                 <BackgroundSVG />
-                <div className='landing h-[100vh] w-[100vw]'>
+                <div className='landing h-[100vh] w-[100vw] '>
                     <div className='land text-[11rem] ml-[-10%] flex justify-center font-bold whitespace-nowrap'>
 
                         <p>A</p>

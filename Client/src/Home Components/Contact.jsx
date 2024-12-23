@@ -1,4 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import instagram from '../assets/SocialMedia/instagramLogo.png';
+import facebook from '../assets/SocialMedia/Facebook.png';
+import github from '../assets/SocialMedia/Github.png';
+import linkedin from '../assets/SocialMedia/LinkedIn.png';
+import X from '../assets/SocialMedia/x.png';
 
 function Contact() {
 
@@ -17,9 +23,9 @@ function Contact() {
             email: email,
             subject: subject,
             message: message,
-            firstName:firstName,
-            lastName:lastName,
-            company:company
+            firstName: firstName,
+            lastName: lastName,
+            company: company
         };
 
         const res = await fetch(`${baseUrl}/email/sendEmail`, {
@@ -45,10 +51,31 @@ function Contact() {
                     <div className="container max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Section */}
                         <div className="flex flex-col justify-center space-y-6">
-                            <div className="items-center space-x-3">
+                            {/* <div className="items-center space-x-3">
                                 <h1 className="text-5xl font-bold tracking-wide">Social Media Links</h1>
-                            </div>
+                            </div> */}
                             <h2 className="text-4xl font-bold">Get in touch.</h2>
+                            <div className='flex gap-4'>
+                                <Link target="_blank" to="https://www.instagram.com/abhay_kevat_2310/">
+                                    <img src={instagram} alt="instagram Logo" height={40} width={40} />
+                                </Link>
+
+                                <Link target="_blank" to="https://github.com/Abhaykevat23">
+                                    <img src={github} alt="github Logo" height={40} width={40} />
+                                </Link>
+
+                                <Link target="_blank" to="https://www.linkedin.com/in/abhay-kevat">
+                                    <img src={facebook} alt="facebook Logo" height={40} width={40} />
+                                </Link>
+
+                                <Link target="_blank" to="https://www.linkedin.com/in/abhay-kevat">
+                                    <img src={linkedin} alt="linkedin Logo" height={40} width={40} />
+                                </Link>
+
+                                <Link target="_blank" to="https://x.com/abhaykevat23">
+                                    <img src={X} alt="X Logo" height={40} width={40} />
+                                </Link>
+                            </div>
                             <p className="text-gray-400 text-lg">
                                 Need some help? Let me know what you need, and I'll get straight back to you.
                             </p>
@@ -129,7 +156,7 @@ function Contact() {
 
                                 {/* Submit Button */}
                                 <button
-                                    type="button" onClick={()=>sendMail()}
+                                    type="button" onClick={() => sendMail()}
                                     className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-md text-lg font-medium transition duration-300"
                                 >
                                     Send
@@ -139,9 +166,9 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className='footer flex flex-col items-center mt-[8rem] align-text-bottom text-center'>
+                <div className='footer flex flex-col items-center mt-[3rem] align-text-bottom text-center'>
                     <p> &copy; Copyright 2024 </p>
-                    <p>@<a href="#">abhaykevat.vercel.app</a> All Rights Reserved</p>
+                    <p>@<Link to="https://abhaykevat.vercel.app/">abhaykevat.vercel.app</Link> All Rights Reserved</p>
                 </div>
             </div>
         </>

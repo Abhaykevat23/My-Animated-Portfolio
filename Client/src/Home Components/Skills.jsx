@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import './SkillsCSS.css';
@@ -49,51 +50,75 @@ const Skills = () => {
         </div>
         <div className="skills-content">
           <div className="skills-item">
-            <img src={JavaScript} alt="Vue.js" />
+            <Link target="_blank" to="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+              <img src={JavaScript} alt="Javascript" />
+            </Link>
             <p>JavaScript</p>
           </div>
           <div className="skills-item">
-            <img src={react} alt="Bootstrap" />
+            <Link target="_blank" to="https://react.dev/">
+              <img src={react} alt="ReactJS" />
+            </Link>
             <p>React</p>
           </div>
           <div className="skills-item">
-            <img src={Git} alt="Laravel" />
+            <Link target="_blank" to="https://git-scm.com/">
+              <img src={Git} alt="Git" />
+            </Link>
             <p>Git</p>
           </div>
           <div className="skills-item">
-            <img src={PHP} alt="TailwindCSS" />
+            <Link target="_blank" to="https://www.php.net/">
+              <img src={PHP} alt="PHP" />
+            </Link>
             <p>PHP</p>
           </div>
           <div className="skills-item">
-            <img src={MongoDB} alt="CSS3" />
+            <Link target="_blank" to="https://www.mongodb.com/">
+              <img src={MongoDB} alt="MongoDB" />
+            </Link>
             <p>MongoDB</p>
           </div>
           <div className="skills-item">
-            <img src={NodeJS} alt="HTML5" />
+            <Link target="_blank" to="https://nodejs.org/en">
+              <img src={NodeJS} alt="NodeJS" />
+            </Link>
             <p>NodeJS</p>
           </div>
           <div className="skills-item">
-            <img src={TailwindCSS} alt="PHP" />
+            <Link target="_blank" to="https://tailwindcss.com/">
+              <img src={TailwindCSS} alt="Tailwind CSS" />
+            </Link>
             <p>Tailwind CSS</p>
           </div>
           <div className="skills-item">
-            <img src={Postman} alt="JavaScript" />
+            <Link target="_blank" to="https://www.postman.com/">
+              <img src={Postman} alt="Postman" />
+            </Link>
             <p>Postman</p>
           </div>
           <div className="skills-item">
-            <img src={Bootstrap} alt="Figma" />
+            <Link target="_blank" to="https://tailwindcss.com/">
+              <img src={Bootstrap} alt="Bootstrap" />
+            </Link>
             <p>Bootstrap</p>
           </div>
           <div className="skills-item">
-            <img src={SQL} alt="Figma" />
+            <Link target="_blank" to="https://www.mysql.com/">
+              <img src={SQL} alt="SQL" />
+            </Link>
             <p>SQL</p>
           </div>
           <div className="skills-item">
-            <img src={Angular} alt="Figma" />
+            <Link target="_blank" to="https://angular.dev/">
+              <img src={Angular} alt="Angular" />
+            </Link>
             <p>Angular</p>
           </div>
           <div className="skills-item">
-            <img src={Java} alt="Figma" />
+            <Link target="_blank" to="https://www.java.com/">
+              <img src={Java} alt="Java" />
+            </Link>
             <p>Java</p>
           </div>
         </div>
