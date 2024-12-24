@@ -83,7 +83,6 @@ My-Animated-Portfolio/
 
 ## Future Improvements
 
-- Add user authentication for personalized experiences.
 - Enhance animation effects for an even smoother UI.
 - Integrate a blog section to share updates and articles.
 
