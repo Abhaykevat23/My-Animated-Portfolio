@@ -38,7 +38,7 @@ function Projects() {
             <div style={bgGradient} className='parent h-[100vh] w-[100vw] bg-blue-950 overflow-x-hidden m-0 p-0 flex items-center'>
                 <div className="title mb-10 gap-[20rem] ml-[15rem] flex justify-between w-[100vw]" >
                     <div className='project-container'>
-                        <Link target='_blank' to="">
+                        <Link target='_blank' to="https://github.com/Abhaykevat23/justdeal">
                             <img src={JustDeal} className='project-image' alt="JustDeal Project" />
                         </Link>
                         <div className="image-text">JustDeal</div>
