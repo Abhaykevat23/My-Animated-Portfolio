@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all';
@@ -37,27 +38,37 @@ function Projects() {
             <div style={bgGradient} className='parent h-[100vh] w-[100vw] bg-blue-950 overflow-x-hidden m-0 p-0 flex items-center'>
                 <div className="title mb-10 gap-[20rem] ml-[15rem] flex justify-between w-[100vw]" >
                     <div className='project-container'>
-                        <img src={JustDeal} className='project-image' alt="Project" />
+                        <Link target='_blank' to="">
+                            <img src={JustDeal} className='project-image' alt="JustDeal Project" />
+                        </Link>
                         <div className="image-text">JustDeal</div>
                     </div>
 
                     <div className='project-container'>
-                        <img src={iNotebook} className='project-image' alt="Project" />
+                        <Link target='_blank' to="https://github.com/Abhaykevat23/iNotebook">
+                            <img src={iNotebook} className='project-image' alt="iNotebook Project" />
+                        </Link>
                         <div className="image-text text-black">iNotebook</div>
                     </div>
 
                     <div className='project-container'>
-                        <img src={BrightStar} className='project-image' alt="Project" />
+                        <Link target='_blank' to="https://github.com/Abhaykevat23/phone-solar">
+                            <img src={BrightStar} className='project-image' alt="BrightStar Project" />
+                        </Link>
                         <div className="image-text">E-Commerce Website</div>
                     </div>
-                    
+
                     <div className='project-container'>
-                        <img src={DataGraphicss} className='project-image' alt="Project" />
+                        <Link target='_blank' to="https://github.com/Abhaykevat23/Data-Graphicss">
+                            <img src={DataGraphicss} className='project-image' alt="Data Graphicss Project" />
+                        </Link>
                         <div className="image-text text-black">Data Graphicss</div>
                     </div>
-                    
+
                     <div className='project-container'>
-                        <img src={FaceMark} className='project-image' alt="Project" />
+                        <Link target='_blank' to="https://github.com/Abhaykevat23/FaceMark">
+                            <img src={FaceMark} className='project-image' alt="FaceMark Project" />
+                        </Link>
                         <div className="image-text text-black">FaceMark</div>
                     </div>
 
