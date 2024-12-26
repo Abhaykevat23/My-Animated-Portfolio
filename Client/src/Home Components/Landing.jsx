@@ -80,9 +80,9 @@ function Landing() {
         <>
             <div className='relative'>
                 <BackgroundSVG />
-                <div className='landing h-[100vh] w-[100vw] '>
-                    <div className='land text-[11rem] ml-[-10%] flex justify-center font-bold whitespace-nowrap'>
-
+                <div className="landing h-screen w-screen flex flex-col justify-center items-center">
+                    {/* Name Section */}
+                    <div className="land text-[3.5rem] ml-[-5rem] sm:text-[4rem] md:text-[9rem] lg:text-[10rem] flex justify-center font-bold whitespace-nowrap">
                         <p>A</p>
                         <p>B</p>
                         <p>H</p>
@@ -94,27 +94,29 @@ function Landing() {
                         <p>V</p>
                         <p>A</p>
                         <p>T</p>
-
                     </div>
-                    <div className='land2 text-[8rem] font-bold text-center mt-[-4rem]'>
-                        <div className='whitespace-nowrap'>
-                            <p className='text-blue-300' style={gradiant}>Full Stack</p>
-                            {/* gradiant + multiple skills */}
-                            {/* <p
+
+                    {/* Subtitle Section */}
+                    <div className="land2 text-[3rem] sm:text-[3rem] md:text-[5rem] lg:text-[6rem] font-bold text-center mt-[-2rem]">
+                        {/* Skills Section */}
+                        <div className="whitespace-nowrap">
+                            <p
                                 className="text-blue-300"
-                                // style={{ overflow: "hidden", height: "1.5rem", position: "relative" }}
-                                style={gradiant}
+                                style={gradiant} // Your gradient style
                             >
-                                <span ref={skillRef}>{skills[0]}</span>
-                            </p> */}
+                                Full Stack
+                            </p>
                         </div>
-                        <div className='whitespace-nowrap flex justify-center mt-[-2rem]'>
-                            <p className='web'>Web</p>
+
+                        {/* Web Developer Section */}
+                        <div className="whitespace-nowrap flex justify-center mt-[-1rem]">
+                            <p className="web text-[2.5rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem]">Web</p>
                             <p>&nbsp;</p>
-                            <p className='dev'>Developer</p>
+                            <p className="dev text-[2.5rem] sm:text-[2rem] md:text-[3rem] lg:text-[4rem]">Developer</p>
                         </div>
                     </div>
                 </div>
+
 
                 <About />
                 <Projects />

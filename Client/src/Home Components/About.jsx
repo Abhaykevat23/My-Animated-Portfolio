@@ -70,7 +70,7 @@ function About() {
 
     return (
         <>
-            <div style={bgGradient} id='about' className='about z-10 h-[100vh] w-[100vw] relative bg-blue-950'>
+            <div style={bgGradient} id='about' className='about pb-[20rem] z-10 h-[100vh] w-[100vw] relative bg-blue-950'>
                 <div className="about-section h-[100vh] w-[100vw] relative ">
                     <h1 ref={textRef} className="about-heading text-6xl font-bold text-center mt-16">
                         Transforming Ideas into Reality
