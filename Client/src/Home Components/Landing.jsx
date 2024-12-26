@@ -119,6 +119,24 @@ function Landing() {
 
 
                 <About />
+                {
+                    window.innerWidth < 400 && (
+                        <>
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </>
+                    )
+                }
                 <Projects />
                 {/* <hr /> */}
                 <Skills />

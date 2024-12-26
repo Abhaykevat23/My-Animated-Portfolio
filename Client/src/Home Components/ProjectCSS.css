@@ -40,3 +40,17 @@
 .project-container:hover .image-text {
     opacity: 1;
 }
+
+/* project GAP */
+
+@media  (max-width: 360px) {
+    .title{
+        gap: 3.4rem;
+        margin-left: 0.2rem;
+    }
+    .project-container{
+        height: 10rem;
+        width: auto;
+    }
+
+}
